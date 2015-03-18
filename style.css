@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#grid_container {
+    position: relative;
+    background: #EFEFEF;
+}
+.grid_widget {
+    background: #DDD;
+    position: absolute;
+    z-index: 2;
+    /*box-shadow: inset 1px 1px 0px 0px rgba(0, 0, 0, 0.2), inset -1px -1px 0px 0px rgba(0, 0, 0, 0.2);*/
+    width: 100px;
+    height: 100px;
+}
+.grid_widget.dragging {
+    z-index: 3;
+    background: #9F9;
+}
+.grid_widget.dragging.colliding {
+    background: #FCC;
+}
